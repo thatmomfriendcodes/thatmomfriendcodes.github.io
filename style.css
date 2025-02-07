@@ -1,0 +1,291 @@
+
+            :root {
+
+                --body-bg-image: url('/graphics/background-images/bkgtile.gif');
+            }
+
+
+
+@font-face {
+    font-family: Dream;
+    src: url(fonts/dream_orphans/Dream-Orphans.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Dream;
+    src: url(fonts/dream_orphans/Dream-Orphans-It.otf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Dream;
+    src: url(fonts/dream_orphans/Dream-Orphans-Bd.otf);
+    font-weight: 400;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: Saturday;
+    src: url(fonts/saturday_6/Saturday.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: OldStyle;
+    src: url(fonts/oldstyle_hplhs/OLDSH___.TTF);
+}
+
+@font-face {
+    
+    font-family: AppleGaramond;
+    src: url(fonts/apple_garamond/AppleGaramond.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: TypographyTimes;
+    src: url(fonts/typography_times/Typography Times Regular.ttf);
+    font-style:normal;
+    
+}
+
+            body {
+                font-family: Dream, sans-serif;
+                margin: 0;
+                background-color: #36453B;
+                /* you can delete the line below if you'd prefer to not use an image */
+                background-size: 65px;
+                color: #C2C1A5;
+                background-image: var(--body-bg-image);
+                background-attachment: fixed;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+      /* the "container" is what wraps your entire website */
+            /* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+            #container {
+                max-width: 900px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+                margin: 0 auto;
+                /* this centers the entire page */
+            }
+
+            /* the area below is for all links on your page
+    EXCEPT for the navigation */
+            #container a {
+                font-weight: bold;
+                /* if you want to remove the underline
+      you can add a line below here that says:
+      text-decoration:none; */
+            }
+
+            #header {
+                width: 100%;
+                /* header color here! */
+                height: 75px;
+                /* this is only for a background image! */
+                /* if you want to put images IN the header, 
+      you can add them directly to the <div id="header"></div> element! */
+            }
+
+            /* navigation section!! */
+            #navbar {
+                height: 40px;
+                background-color: rgba(14, 24, 17, 0.7);
+                /* navbar color */
+                width: 100%;
+            }
+
+            #navbar ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
+            }
+
+            #navbar li {
+                padding-top: 10px;
+            }
+
+            /* navigation links*/
+            #navbar li a {
+                color: #C2C1A5;
+                /* navbar text color */
+                font-weight: 800;
+                text-decoration: none;
+                /* this removes the underline */
+            }
+
+            /* navigation link when a link is hovered over */
+            #navbar li a:hover {
+                color: #BFBD85;
+                text-decoration: underline;
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            /* this colors BOTH sidebars
+    if you want to style them separately,
+    create styles for #leftSidebar and #rightSidebar */
+            aside {
+                background-color: rgba(30, 46, 35, 0.9);
+                width: 200px;
+                padding: 20px;
+                font-size: smaller;
+                /* this makes the sidebar text slightly smaller */
+            }
+
+
+            /* this is the color of the main content area,
+    between the sidebars! */
+            main {
+                background-color: rgba(54, 69, 59, 0.9);
+                flex: 1;
+                padding: 20px;
+                order: 2;
+            }
+
+            /* what's this "order" stuff about??
+    allow me to explain!
+    if you're using both sidebars, the "order" value
+    tells the CSS the order in which to display them.
+    left sidebar is 1, content is 2, and right sidebar is 3! */
+
+             #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            footer {
+                background-color: rgba(14, 24, 17, 0.7);
+                /* background color for footer */
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+                /* this centers the footer text */
+            }
+
+            h1,
+            h2,
+            h3 {
+   
+                color: #BFBD85;
+            }
+
+
+
+            strong, b {
+                /* this styles bold text */
+                color: #D7D482;
+            }
+
+            /* this is just a cool box, it's the darker colored one */
+            .box {
+                background-color: rgba(54, 69, 59, 0.72);
+                border: 2px solid #515751;
+                padding: 10px;
+            }
+
+            /* CSS for extras */
+
+            #topBar {
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                font-size: smaller;
+                background-color: #13092D;
+            }
+body {
+  color: #C2C1A5;
+  font-family: Dream;
+  cursor: url("cursor-graphics/nat945.gif"),auto;
+
+}
+a {
+  color: #C2C1A5; 
+}
+
+a:hover {
+  color: #F5F9E9; 
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  border-style: none;
+  border-width: 5px;
+    border-radius: 15px;
+  border-color: rgba(136, 124, 77, 0.77);
+ font-family: 'TypographyTimes';
+}
+h2, h3 {
+ font-family: Dream; 
+}
+
+p {
+   font-family: Dream; 
+   font-size: 20px;
+}
+
+button img{
+            width: 75%;
+
+            
+}
+.collapsible {
+  background-color: rgba(14, 24, 17, 0.7);
+  color: #D7D482;
+  cursor: pointer;
+  padding: 0.5em;
+  width: auto;
+  border: none;
+  text-align: center;
+  outline: none;
+font-family: 'Dream';
+font-size: 20px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgba(195, 195, 176, 0.53);
+}
+
+.content {
+  max-height: 0;
+  width: auto;
+ padding-left:.5em;
+    padding-right: .5em;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #515751;
+    margin-bottom: 5px;
+}
+
+article {
+    background-color: rgba(30, 46, 35, 0.85);
+    border-left-style:solid;
+    border-color:rgba(136, 124, 77, 0.77);
+    border-width:15px;
+    padding: 5%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+gap: 5%;
+
+}
